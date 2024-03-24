@@ -9,7 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: " . $email;
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "Correo electrónico enviado con éxito";
+        header("Location: index.html");
+        exit;
     } else {
         echo "Error al enviar el correo electrónico";
     }
