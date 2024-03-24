@@ -59,17 +59,20 @@
 
 .floating-whatsapp {
     position: fixed;
-    bottom: 20px; /* Cambia esto según donde quieras posicionar el botón verticalmente */
-    right: 20px; /* Cambia esto según donde quieras posicionar el botón horizontalmente */
+    bottom: 20px;
+    right: 20px; 
     z-index: 1000;
+    background-color: #25d366 !important; 
+    
   }
   
-  /* Estilo para el icono de WhatsApp */
   .floating-whatsapp i {
-    width: 50px; /* Tamaño del icono */
-    border-radius: 50%; /* Para que sea un círculo */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    font-size: 30px;
+    width: 50px; 
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   }
+
 
 /*** Heading ***/
 h1,
