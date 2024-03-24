@@ -5,6 +5,7 @@
     --light: #fefff7;
     --dark: #1D1D27;
     --grey: #F3F2F1;
+    --green: #4fc77d;
 }
 .text-primary {
     color: #9C0304 !important;
@@ -713,3 +714,17 @@ h6,
     border-top: 2px solid red; /* Establecemos el estilo de la línea roja */
     margin-top: 5%; /* Ajustamos el margen superior para la línea */
 }
+
+
+.footerbg {
+    background-color: #ededed;
+}
+.btn-green {
+    background-color: #25d366;
+    color: white;
+    border-color: #25d366;
+    width: 80px; 
+    height: 80px;
+    font-size: 40px;
+}
+
