@@ -1,11 +1,38 @@
 /********** Template CSS **********/
 :root {
-    --primary: #2124B1;
-    --secondary: #4777F5;
-    --light: #F7FAFF;
+    --primary: #9C0304;
+    --secondary: #F4F4F4;
+    --light: #fefff7;
     --dark: #1D1D27;
+    --grey: #F3F2F1;
+}
+.text-primary {
+    color: #9C0304 !important;
+    text-transform: uppercase;
+}
+.btn-light {
+    background-color: #e1ff00;
+    /* color: #9C0304;
+    border-color: #9C0304; */
+}
+.textsize {
+    font-size: 4.2rem;
 }
 
+@media screen and (max-width: 600px) {
+    .textsize {
+        font-size: 2rem;
+    }
+}
+
+.fa-phone {
+    color: yellow;
+}
+
+.phonenumber {
+    background-color: rgba(128, 128, 128, 0.5);
+    text-align: center;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -161,7 +188,7 @@ h6,
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--secondary);
+        background: var(--primary);
         transition: .5s;
     }
 
@@ -183,20 +210,8 @@ h6,
 
 /*** Hero Header ***/
 .hero-header {
-    background:
-        url(../img/bg-dot.png),
-        url(../img/bg-dot.png),
-        url(../img/bg-round.png),
-        url(../img/bg-tree.png),
-        url(../img/bg-bottom-hero.png);
-    background-position:
-        10px 10px,
-        bottom 190px right 10px,
-        left 55% top -1px,
-        left 45% bottom -1px,
-        center bottom -1px;
-    background-repeat: no-repeat;
-}
+    background-color: #FFFFFF;
+} 
 
 
 /*** Section Title ***/
@@ -207,7 +222,7 @@ h6,
     height: 4px;
     bottom: 0;
     left: 0;
-    background: var(--dark);
+    /* background: var(--dark); */
 }
 
 .section-title::after {
@@ -217,7 +232,7 @@ h6,
     height: 4px;
     bottom: 0;
     left: 50px;
-    background: var(--dark);
+    /* background: var(--dark); */
 }
 
 .section-title.text-center::before {
@@ -238,7 +253,7 @@ h6,
     height: 10px;
     top: 2px;
     left: 0;
-    background: rgba(33, 66, 177, .5);
+    /* background: rgba(33, 66, 177, .5); */
 }
 
 .section-title h6::after {
@@ -258,7 +273,8 @@ h6,
 }
 
 .service-item:hover {
-    background: var(--primary);
+    background: #FFF4EF;
+
 }
 
 .service-item .service-icon {
@@ -269,13 +285,13 @@ h6,
     align-items: center;
     justify-content: center;
     color: var(--light);
-    background: url(../img/icon-shape-primary.png) center center no-repeat;
+    /* background: url(../img/icon-shape-primary.png) center center no-repeat; */
     transition: .5s;
 }
 
 .service-item:hover .service-icon {
     color: var(--primary);
-    background: url(../img/icon-shape-white.png);
+    /* background: url(../img/icon-shape-white.png); */
 }
 
 .service-item h5,
@@ -285,7 +301,7 @@ h6,
 
 .service-item:hover h5,
 .service-item:hover p {
-    color: var(--light);
+    color: var(--primary);
 }
 
 .service-item a.btn {
@@ -318,6 +334,80 @@ h6,
     background: var(--light);
 }
 
+
+
+
+/*** planes ***/
+.planes-item {
+    position: relative;
+    height: 350px;
+    padding: 30px 25px;
+    background: #ededed;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.planes-item:hover {
+    background: #ffffff;
+
+}
+
+.planes-item .service-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    /* background: url(../img/icon-shape-primary.png) center center no-repeat; */
+    transition: .5s;
+}
+
+.planes-item:hover .planes-icon {
+    color: var(--primary);
+    /* background: url(../img/icon-shape-white.png); */
+}
+
+.planes-item h5,
+.planes-item p {
+    transition: .5s;
+}
+
+.planes-item:hover h5,
+.planes-item:hover p {
+    color: var(--black);
+}
+
+.planes-item a.btn {
+    position: relative;
+    display: flex;
+    color: var(--primary);
+    transition: .5s;
+    z-index: 1;
+}
+
+.planes-item:hover a.btn {
+    color: var(--primary);
+}
+
+.planes-item a.btn::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #DDDDDD;
+    transition: .5s;
+    z-index: -1;
+}
+
+.planes-item:hover a.btn::before {
+    width: 100%;
+    background: var(--light);
+}
 
 /*** Testimonial ***/
 .newsletter,
@@ -522,4 +612,21 @@ h6,
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+.fondo-blanco {
+    background-color: white;
+    color: black;
+}
+
+.container-fluid .hero-header p {
+    color: black;
+}
+
+.container-fluid .hero-header h1 {
+    color: var(--bs-primary);
+}
+
+.red-line {
+    border-top: 2px solid red; /* Establecemos el estilo de la línea roja */
+    margin-top: 5%; /* Ajustamos el margen superior para la línea */
 }
