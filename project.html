@@ -207,15 +207,18 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <h5 class="text-primary mb-4">Solicitar un Presupuesto</h5>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Quiero un presupuesto" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
+                        <form action="enviar_correo.php" method="post">
+                            <h5 class="text-primary mb-4">Solicitar un Presupuesto</h5>
+                            <div class="position-relative w-100 mt-3">
+                                <input name="email" class="form-control border-0 rounded-pill w-100" type="email" placeholder="Tu correo electrónico">
+                                <input name="Presupuesto" class="form-control border-0 rounded-pill w-100 mt-4" type="text" placeholder="Quiero un presupuesto">
+                                <button type="submit" class="btn btn-danger shadow-none mt-4">Enviar correo</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3 mt-4">
                         <h5 class="text-primary mb-4">Ubicación</h5>
-                        <div class="position-relative w-100 mt-3">
+                        <div class="position-relative mt-3" style="max-width: 100%;">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d230823.41550307942!2d-57.470468999999994!3d-25.317107!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDIwJzMxLjAiUyA1N8KwMzAnNDcuMCJX!5e0!3m2!1ses!2sus!4v1711252481027!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
