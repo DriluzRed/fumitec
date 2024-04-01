@@ -10,14 +10,38 @@
 .text-primary {
     color: #9C0304 !important;
     text-transform: uppercase;
+    margin-left: 20px !important; 
 }
 .btn-light {
-    background-color: #e1ff00;
+    background-color: #c5a91f;
     /* color: #9C0304;
     border-color: #9C0304; */
 }
 .textsize {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
+}
+
+.hero-text-size {
+    color: #850606;
+    font-family: "Merriweather Sans", Sans-serif;
+    font-size: 70px;
+    margin-left: 5% !important; 
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -25,6 +49,42 @@
         font-size: 2rem;
     }
 }
+
+@media (max-width: 767px) {  
+    .floating-whatsapp {
+      width: 50px; /* Ajusta este valor según tus necesidades */
+      height: 50px; /* Ajusta este valor según tus necesidades */
+    }
+    .wsize {
+      font-size: 24px; /* Ajusta este valor según tus necesidades */
+    }
+    .hero-text-size {
+        color: #850606;
+        font-family: "Merriweather Sans", Sans-serif;
+        font-size: 45px;
+        text-transform: uppercase;
+        font-style: normal;
+        text-decoration: none;
+        line-height: 94px;
+        letter-spacing: -2px;
+    }
+  }
+
+  .map-container {
+    position: relative;
+    padding-bottom: 75%; /* Proporción 4:3 */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .fa-phone {
     color: yellow;
@@ -226,10 +286,23 @@ h6,
 
 
 /*** Hero Header ***/
-.hero-header {
-    background-color: #FFFFFF;
-} 
+.hero-header-img {
+    background-image: url('/img/termonebulizacion.jpg');
+    background-size: cover;
+}
+@media (max-width: 767px) {  
+    .hero-header-img {
+        background-image: url('/img/termonebulizacion-mobile-transparent.png');
+       background-size: cover;
+       background-color: rgba(255, 255, 255, 0.048);
+      }
+  }
 
+  @media (max-width: 767px) {  
+    .text-sm-black {
+      color: #000000 !important; /* Color negro para pantallas pequeñas */
+    }
+  }
 
 /*** Section Title ***/
 .section-title::before {
@@ -278,20 +351,37 @@ h6,
     left: 3px;
 }
 
+section {
+        padding: 100px 0;
+}
+
+/* Estilo para dispositivos con pantalla pequeña (teléfonos inteligentes, smart phones) */
+@media (max-width: 767px) {  
+    section {
+        padding: 160px 0; /* Ajusta estos valores según tus necesidades */
+    }
+}
+
 
 /*** Service ***/
 .service-item {
-    position: relative;
-    height: 350px;
-    padding: 30px 25px;
-    background: #FFFFFF;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-    transition: .5s;
+        position: relative;
+        height: 350px;
+        padding: 30px 25px;
+        background: #FFFFFF;
+        box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+        transition: .5s;
+}
+
+/* Estilo para dispositivos con pantalla pequeña (teléfonos inteligentes, smart phones) */
+@media (max-width: 767px) {  
+    .service-item {
+        height: auto; /* Ajusta este valor según tus necesidades */
+    }
 }
 
 .service-item:hover {
-    background: #FFF4EF;
-
+        background: #FFF4EF;
 }
 
 .service-item .service-icon {
