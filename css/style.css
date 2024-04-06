@@ -290,15 +290,16 @@ h6,
     background-image: url('/img/termonebulizacion.jpg');
     background-size: cover;
 }
-@media (max-width: 767px) {  
+@media (max-width: 1200px) {  
     .hero-header-img {
         background-image: url('/img/termonebulizacion-mobile-transparent.png');
-       background-size: cover;
-       background-color: rgba(255, 255, 255, 0.048);
-      }
-  }
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.048);
+    }
+}
 
-  @media (max-width: 767px) {  
+  @media (max-width: 1200px) {  
     .text-sm-black {
       color: #000000 !important; /* Color negro para pantallas pequeñas */
     }
@@ -727,6 +728,7 @@ section {
 .footer {
     background: url(../img/footer.png) center center no-repeat;
     background-size: contain;
+    text-align: center;
 }
 
 .footer .btn.btn-social {
